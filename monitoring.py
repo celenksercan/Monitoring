@@ -32,3 +32,9 @@ def monitor_ram():
     print("Available Memory {} bytes".format(virtual_memory.available))
     print("Used Memory {} bytes".format(virtual_memory.used))
     print("Percent used {}% ".format(virtual_memory.percent))
+    
+    
+    
+def monitor_disk():
+    print("\n DISK PARTITIONS")
+    print(psutil.disk_partitions())
