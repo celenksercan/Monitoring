@@ -18,3 +18,8 @@ def monitor_cpu_util():
 def monitor_cpu_cores():
     print("\n CPU CORES")
     print(psutil.cpu_count())
+    
+    
+def monitor_cpu_freq():
+    print("\n CPU FREQUENCIES")
+    print("{} Mhz".format(psutil.cpu_freq().current))
