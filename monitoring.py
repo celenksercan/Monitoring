@@ -75,3 +75,7 @@ def run_all_checks():
     monitor_disk_usage()
     monitor_network()
     monitor_battery()
+
+    
+    
+run_all_checks()
