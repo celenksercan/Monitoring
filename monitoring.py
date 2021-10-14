@@ -10,3 +10,7 @@ def monitor_cpu_times():
     print("Time spent on processes by the User: {}".format(user_time))
     print("Time spent on processes by the System: {}".format(system_time))
     print("Time spent on processes by the Idle: {}".format(idle_time))
+
+def monitor_cpu_util():
+    print("\ CPU UTIL")
+    print(psutil.cpu_percent())
