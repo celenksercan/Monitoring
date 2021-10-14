@@ -14,3 +14,7 @@ def monitor_cpu_times():
 def monitor_cpu_util():
     print("\ CPU UTIL")
     print(psutil.cpu_percent())
+    
+def monitor_cpu_cores():
+    print("\n CPU CORES")
+    print(psutil.cpu_count())
