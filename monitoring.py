@@ -23,3 +23,12 @@ def monitor_cpu_cores():
 def monitor_cpu_freq():
     print("\n CPU FREQUENCIES")
     print("{} Mhz".format(psutil.cpu_freq().current))
+    
+    
+def monitor_ram():
+    print("\n RAM USAGE")
+    virtual_memory=psutil.virtual_memory()
+    print("Total Memory {} bytes".format(virtual_memory.total))
+    print("Available Memory {} bytes".format(virtual_memory.available))
+    print("Used Memory {} bytes".format(virtual_memory.used))
+    print("Percent used {}% ".format(virtual_memory.percent))
