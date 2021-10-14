@@ -61,3 +61,17 @@ def monitor_battery():
     battery_info=psutil.sensor_battery()
     print("Battery Percent: {}".format(battery_info.percent))
     print("Seconds left: {}".format(battery_info.secsleft))
+    
+    
+    
+    
+def run_all_checks():
+    monitor_cpu_times()
+    monitor_cpu_util()
+    monitor_cpu_cores()
+    monitor_cpu_freq()
+    monitor_ram()
+    monitor_disk()
+    monitor_disk_usage()
+    monitor_network()
+    monitor_battery()
