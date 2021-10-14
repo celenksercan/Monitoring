@@ -47,3 +47,10 @@ def monitor_disk_usage():
     print("Free Memory {} bytes".format(disk_usage.free))
     print("Used Memory {} bytes".format(disk_usage.used))
     print("Percent used {}% ".format(disk_usage.percent))
+    
+    
+def monitor_network():
+    print("\n NETWORK REQUESTS")
+    io_stats=psutil.net_io_counters()
+    print("Total Bytes Sent {} ".format(io_stats.bytes_sent))
+    print("Total Bytes Received {}".format(io_stats.bytes_recv))
