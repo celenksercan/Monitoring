@@ -38,3 +38,12 @@ def monitor_ram():
 def monitor_disk():
     print("\n DISK PARTITIONS")
     print(psutil.disk_partitions())
+
+    
+def monitor_disk_usage():
+    print("\n DISK IMAGE")
+    disk_usage=psutil.disk.usage('/')
+    print("Total Memory {} bytes".format(disk_usage.total))
+    print("Free Memory {} bytes".format(disk_usage.free))
+    print("Used Memory {} bytes".format(disk_usage.used))
+    print("Percent used {}% ".format(disk_usage.percent))
